@@ -1,13 +1,13 @@
 {% set name = "koopa-viz" %}
-{% set version = "0.0.5" %}
+{% set version = "0.0.6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/koopa-viz-{{ version }}.tar.gz
-  sha256: b803b4da69e4e870fea53cdb0c20a01642a3fdec3617e9c2d9aa70af13baa22d
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: b2e73f4f81c156aaab418b950bc043fc8ba4332775a13132a8f5818ee1e92bd5
 
 build:
   noarch: python
